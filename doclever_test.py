@@ -17,7 +17,7 @@ class Demo(unittest.TestCase):
     username = config['env1']['username']
     password = config['env1']['password']
 
-    driver = webdriver.Chrome(os.path.join(os.path.dirname(__file__), 'chromedriver.exe'))
+    driver = webdriver.Chrome()
     driver.implicitly_wait(30)
     verificationErrors = []
     accept_next_alert = True
